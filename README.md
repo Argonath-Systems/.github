@@ -212,9 +212,9 @@ Bundles distributed on CurseForge may include optional monetization features whi
 
 ## 🌐 Ecosystem
 
-Part of the larger **Lord of the Tales** project - a Lord of the Rings themed server implementation for Hytale.
+Part of the larger **Argonath Systems** project - a Lord of the Rings themed server implementation for Hytale.
 
-- **Main Project:** [Lord of the Tales](https://github.com/LordOfTheTales)
+- **Main Project:** [Argonath Systems](https://github.com/LordOfTheTales)
 - **Web UI Editor:** [HyQuestUI](https://github.com/HyQuestUI)
 - **UI Library:** [HyUI](https://github.com/HyUI)
 
