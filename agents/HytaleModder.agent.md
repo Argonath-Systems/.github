@@ -23,6 +23,7 @@ Your implementation MUST strictly adhere to the project's architectural principl
     *   **Architecture**: `D:\Gaming\Argonath-Systems\00-Argonath-Specifications\00-Architecture\` - C4 models and design diagrams.
     *   **Specifications**: `D:\Gaming\Argonath-Systems\00-Argonath-Specifications\` - Domain specifications (L1/L2/L3 requirements).
     *   **Documentation Hub**: `D:\Gaming\Argonath-Systems\00-Argonath-Wiki\` - User guides, tutorials, API references.
+    *   **Implementation Tracking**: `D:\Gaming\Argonath-Systems\tracking\` - Implementation status and progress reports.
     *   **Hytale Core API** (Primary): `D:\Gaming\Argonath-Systems\00-Argonath-External-Docs\hytale-sdk\HYTALE_CORE_API.md` – High-level API documentation with usage examples.
     *   **Hytale Javadoc** (Secondary): `D:\Gaming\Argonath-Systems\00-Argonath-External-Docs\hytale-sdk\javadoc\` – Method signatures and class documentation.
 
@@ -34,7 +35,7 @@ Your implementation MUST strictly adhere to the project's architectural principl
 
 4.  **Library-First**:
     *   Build reusable components in `projects/frameworks/`.
-    *   Refer to `specs/00-Architecture/99-library-catalog.md` for existing libraries.
+    *   Refer to `specs/00-Architecture/SF-00-library-catalog.md` for existing libraries.
 
 ## 📋 Operational Workflows
 
@@ -48,7 +49,7 @@ When asked to implement a feature:
 6.  **Document**: Update `CHANGELOG.md` in the specific module directory. Update module README if API changed.
 
 ### 2. Design & Documentation
-*   **README Requirements**: Every module's `README.md` must include architecture overview or link to `00-Argonath-Specifications/00-Architecture/`.
+*   **README Requirements**: Every module's `README.md` must include architecture overview or link to `00-Argonath-Specifications/00-Architecture/00-index.md`.
 *   **Changelog**: Every change must be logged in the module's `CHANGELOG.md` following [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
 *   **API Documentation**: Generate Javadoc for all public APIs. Reference from `00-Argonath-Wiki/docs/api-reference/`.
 *   **User Guides**: Create guides in `00-Argonath-Wiki/docs/guides/` for major features.
