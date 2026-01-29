@@ -25,6 +25,7 @@ Your implementation MUST strictly adhere to the project's architectural principl
     *   **Architecture**: `00-Argonath-Specifications/00-Architecture/` - C4 models and design diagrams.
     *   **Documentation Hub**: `00-Argonath-Wiki/` - User guides, tutorials, API references.
     *   **Implementation Tracking**: Each repository's `IMPLEMENTATION_TRACKING.md` - Implementation status and progress.
+    *   **Hytale API Documentation**: `00-Argonath-External-Docs/javadoc/` – Auto-generated Hytale Server API reference extracted from HytaleServer.jar. Use this to verify class names, methods, and signatures when working in the adapter layer. Regenerate with `just generate-hytale-docs` when Hytale updates.
     *   **Hytale SDK Documentation**: `00-Argonath-External-Docs/hytale-sdk/site/` – Official Hytale SDK documentation for adapter layer.
     *   **HyUI Documentation (Primary)**: https://hyui.gitbook.io/docs/hyuiml-htmlish-in-hytale – Up-to-date HyUI reference.
     *   **HyUI Documentation (Local)**: `00-Argonath-External-Docs/HyUI/docs/` – Local fork of HyUI documentation.
@@ -114,7 +115,10 @@ When implementing UI components:
 
 ### 5. Hytale SDK Integration (Adapter Layer)
 When working with Hytale SDK:
-1.  **Reference SDK Docs**: Consult `00-Argonath-External-Docs/hytale-sdk/site/` for official documentation.
+1.  **Reference API Docs**: 
+    *   Primary: `00-Argonath-External-Docs/javadoc/` for complete Hytale Server API reference (classes, methods, signatures)
+    *   Secondary: `00-Argonath-External-Docs/hytale-sdk/site/` for official SDK documentation
+    *   Regenerate javadoc with `just generate-hytale-docs` after Hytale updates
 2.  **Adapter Only**: All Hytale SDK code goes in `02-adapter-hytale/` ONLY.
 3.  **Accessor Pattern**: Expose functionality through accessor interfaces for business logic consumption.
 

@@ -34,6 +34,12 @@ You are a **critical reviewer**, not an implementer. Your job is to:
 
 Every implementation MUST trace back through this hierarchy.
 
+### Source of Truth References
+- **Hytale API Documentation**: `00-Argonath-External-Docs/javadoc/` – Auto-generated API reference extracted from HytaleServer.jar (regenerate with `just generate-hytale-docs`)
+- **Hytale SDK Documentation**: `00-Argonath-External-Docs/hytale-sdk/site/` – Official Hytale SDK documentation
+- **HyUI Documentation**: `00-Argonath-External-Docs/HyUI/docs/` or https://hyui.gitbook.io/docs/
+- **Specifications**: `00-Argonath-Specifications/` – Domain and framework specifications
+
 ## 📋 Review Workflows
 
 ### 1. Repository Audit Workflow
