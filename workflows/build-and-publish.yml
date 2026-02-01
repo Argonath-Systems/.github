@@ -39,6 +39,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Validate HyUI Templates
+        run: |
+          echo "=== Validating HyUI Templates ==="
+          python3 build-tools/hyui-validator/validate_hyuiml.py --module-scan --fail-on-error
+      
       - name: Build All Frameworks
         run: |
           echo "=== Building Individual Frameworks ==="
